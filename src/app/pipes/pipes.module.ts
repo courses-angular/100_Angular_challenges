@@ -3,14 +3,13 @@ import {CommonModule} from '@angular/common';
 
 import {PipesRoutingModule} from './pipes-routing.module';
 import {PipesDocumentationComponent} from './pipes-documentation/pipes-documentation.component';
-import {TruncatePipe} from './truncate.pipe';
-import {AppModule} from '../app.module';
-import {CardComponent} from '../components/card/card.component';
+import {TruncatePipe} from './truncate-pipe/truncate.pipe';
 import {SharedModule} from '../shared/shared.module';
+import { CreditCardFormatterPipe } from './credit-card/credit-card-formatter.pipe';
 
 
 @NgModule({
-  declarations: [PipesDocumentationComponent, TruncatePipe],
+  declarations: [PipesDocumentationComponent, TruncatePipe, CreditCardFormatterPipe],
   imports: [
     CommonModule,
     PipesRoutingModule,

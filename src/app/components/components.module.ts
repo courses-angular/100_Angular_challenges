@@ -10,6 +10,8 @@ import {ProgressBarComponent} from './progress-bar/progress-bar.component';
 import {StarRatingsComponent} from './star-ratings/star-ratings.component';
 import {TopOfPageComponent} from './top-of-page/top-of-page.component';
 import {SharedModule} from '../shared/shared.module';
+import { LoaderComponent } from './loader/loader.component';
+import { CreaditCardInputComponent } from './creadit-card-input/creadit-card-input.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import {SharedModule} from '../shared/shared.module';
     ProgressBarComponent,
     StarRatingsComponent,
     TopOfPageComponent,
+    LoaderComponent,
+    CreaditCardInputComponent,
   ],
   exports: [
     ToolbarComponent,
@@ -27,7 +31,7 @@ import {SharedModule} from '../shared/shared.module';
     ProgressBarComponent,
     StarRatingsComponent,
     TopOfPageComponent,
-
+    LoaderComponent,
   ],
   imports: [
     CommonModule,
