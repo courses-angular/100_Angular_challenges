@@ -1,0 +1,28 @@
+@import "../../../styles";
+button{
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  border: 0;
+  padding: 10px 12px ;
+  background-color: $red;
+  z-index: 2;
+  border-radius: 50%;
+  transition: all 0.5s;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+ @include box-shadow();
+  &.isShow{
+    height: 50px;
+    width: 50px;
+    visibility: visible;
+
+  }
+  i{
+    color: white;
+
+  }
+
+
+}

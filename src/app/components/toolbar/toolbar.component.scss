@@ -1,0 +1,27 @@
+@import "../../../styles";
+
+:host ::ng-deep{
+  ul{
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    li{
+      display: inline;
+      cursor: pointer;
+    }
+  }
+}
+.toolbar__container{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+  align-items: center;
+  padding: 10px;
+  background-color: $blue;
+  color: white;
+
+  @include box-shadow();
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+}
