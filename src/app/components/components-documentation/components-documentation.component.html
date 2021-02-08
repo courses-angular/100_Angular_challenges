@@ -78,8 +78,28 @@
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Quote'" [subTitle]="'Components'">
   <yl-quote body [quote]="'The way to get started is to quit talking and begin doing.'" [author]="'Walt Disney'" [occupation]="'American animator,writer,voice actor,film producer'"></yl-quote>
 </yl-card>
+
 <!--Switch - Toggle-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Toggle'" [subTitle]="'Components'">
   <yl-toggle body [isOn]="false"></yl-toggle>
+</yl-card>
+
+<!--Rich Text Viewer-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Rich text viewer'" [subTitle]="'Components'">
+  <div body style="border-bottom: 1px solid #ccc;margin-bottom: 1rem;padding: 10px">
+    <h3>Good example</h3>
+    <yl-reach-text-viewer [htmlText]="'<p>Hello world</p>'"></yl-reach-text-viewer>
+  </div>
+
+  <div body style="border-bottom: 1px solid #ccc;margin-bottom: 1rem;padding: 10px">
+    <h3>Empty example(Empty html)</h3>
+    <yl-reach-text-viewer [htmlText]="'  '"></yl-reach-text-viewer>
+  </div>
+
+  <div body style="padding: 10px">
+    <h3>Bad example(Missing closing tag)</h3>
+    <yl-reach-text-viewer [htmlText]="'<p>Hello world'"></yl-reach-text-viewer>
+  </div>
+
 </yl-card>
 

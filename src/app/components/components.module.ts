@@ -54,6 +54,7 @@ import { ReachTextViewerComponent } from './reach-text-viewer/reach-text-viewer.
     ModalComponent,
     QuoteComponent,
     ToggleComponent,
+    ReachTextViewerComponent,
   ],
   imports: [
     CommonModule,
