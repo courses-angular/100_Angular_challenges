@@ -14,6 +14,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { CreditCardInputComponent } from './creadit-card-input/credit-card-input.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LoaderV2Component } from './loader-v2/loader-v2.component';
+import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { LoaderV2Component } from './loader-v2/loader-v2.component';
     LoaderComponent,
     CreditCardInputComponent,
     LoaderV2Component,
+    TwitterPostComponent,
   ],
   exports: [
     ToolbarComponent,
@@ -37,6 +39,7 @@ import { LoaderV2Component } from './loader-v2/loader-v2.component';
     LoaderComponent,
     CreditCardInputComponent,
     LoaderV2Component,
+    TwitterPostComponent,
   ],
   imports: [
     CommonModule,

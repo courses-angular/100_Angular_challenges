@@ -27,9 +27,9 @@
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Spinner'" [subTitle]="'Components'">
   <yl-loader body [isLoading]="false"></yl-loader>
 </yl-card>
-
+<!--Loader by type-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Spinner'" [subTitle]="'Components'">
-  <yl-loader-v2 body [isLoading]="true" [loaderType]="loaderType"></yl-loader-v2>
+  <yl-loader-v2 body [isLoading]="false" [loaderType]="loaderType"></yl-loader-v2>
 </yl-card>
 
 <!--Credit card Input-->
@@ -46,6 +46,10 @@
     <yl-credit-card-input [maxWidth]="15" [isReadonly]="true" [creditCardNumber]="'6321432143214321'"></yl-credit-card-input>
   </div>
 
+</yl-card>
+
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter post'" [subTitle]="'Components'">
+ <yl-twitter-post body></yl-twitter-post>
 </yl-card>
 
 
