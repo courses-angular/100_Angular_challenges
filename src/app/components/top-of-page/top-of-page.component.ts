@@ -9,10 +9,8 @@ import {ViewportScroller} from '@angular/common';
 export class TopOfPageComponent implements OnInit {
   public isShow = false;
   @HostListener('window: scroll') onWindowScroll(): void {
-    console.log('scrolling');
     // get y coordinate of window on scroll
     const yCoordinate = this.viewPostScroller.getScrollPosition()[1];
-    console.log(yCoordinate);
     this.isShow = yCoordinate > 400;
 
   }

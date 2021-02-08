@@ -15,7 +15,6 @@ export class StarRatingsComponent implements OnInit {
 
   public get fullStars(): number[] {
     const totalFullStars = Math.floor(this.rating);
-    console.log(Array(totalFullStars).fill(0));
     return Array(totalFullStars).fill(0);
   }
 

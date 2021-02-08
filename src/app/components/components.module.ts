@@ -11,7 +11,9 @@ import {StarRatingsComponent} from './star-ratings/star-ratings.component';
 import {TopOfPageComponent} from './top-of-page/top-of-page.component';
 import {SharedModule} from '../shared/shared.module';
 import { LoaderComponent } from './loader/loader.component';
-import { CreaditCardInputComponent } from './creadit-card-input/creadit-card-input.component';
+import { CreditCardInputComponent } from './creadit-card-input/credit-card-input.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { LoaderV2Component } from './loader-v2/loader-v2.component';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { CreaditCardInputComponent } from './creadit-card-input/creadit-card-inp
     StarRatingsComponent,
     TopOfPageComponent,
     LoaderComponent,
-    CreaditCardInputComponent,
+    CreditCardInputComponent,
+    LoaderV2Component,
   ],
   exports: [
     ToolbarComponent,
@@ -32,11 +35,14 @@ import { CreaditCardInputComponent } from './creadit-card-input/creadit-card-inp
     StarRatingsComponent,
     TopOfPageComponent,
     LoaderComponent,
+    CreditCardInputComponent,
   ],
   imports: [
     CommonModule,
     ComponentsRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ComponentsModule { }
