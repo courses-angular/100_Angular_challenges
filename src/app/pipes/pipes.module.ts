@@ -7,10 +7,11 @@ import {TruncatePipe} from './truncate-pipe/truncate.pipe';
 import {SharedModule} from '../shared/shared.module';
 import { CreditCardFormatterPipe } from './credit-card/credit-card-formatter.pipe';
 import { FlattenPipe } from './flatten-pipe/flatten.pipe';
+import { FilterTermPipe } from './filter-term/filter-term.pipe';
 
 
 @NgModule({
-  declarations: [PipesDocumentationComponent, TruncatePipe, CreditCardFormatterPipe, FlattenPipe],
+  declarations: [PipesDocumentationComponent, TruncatePipe, CreditCardFormatterPipe, FlattenPipe, FilterTermPipe],
   imports: [
     CommonModule,
     PipesRoutingModule,

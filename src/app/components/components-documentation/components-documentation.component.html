@@ -35,38 +35,51 @@
 <!--Credit card Input-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit card Input'" [subTitle]="'Components'">
   <div body>
-    <yl-credit-card-input [maxWidth]="8"  [isReadonly]="false" [creditCardNumber]="'3321432143214321'"></yl-credit-card-input>
+    <yl-credit-card-input [maxWidth]="8" [isReadonly]="false"
+                          [creditCardNumber]="'3321432143214321'"></yl-credit-card-input>
     <br>
-    <yl-credit-card-input [maxWidth]="10" [isReadonly]="false" [creditCardNumber]="'4321432143214321'"></yl-credit-card-input>
+    <yl-credit-card-input [maxWidth]="10" [isReadonly]="false"
+                          [creditCardNumber]="'4321432143214321'"></yl-credit-card-input>
     <br>
-    <yl-credit-card-input [maxWidth]="12" [isReadonly]="false" [creditCardNumber]="'5321432143214321'"></yl-credit-card-input>
+    <yl-credit-card-input [maxWidth]="12" [isReadonly]="false"
+                          [creditCardNumber]="'5321432143214321'"></yl-credit-card-input>
     <br>
-    <yl-credit-card-input [maxWidth]="14" [isReadonly]="false" [creditCardNumber]="'6321432143214321'"></yl-credit-card-input>
+    <yl-credit-card-input [maxWidth]="14" [isReadonly]="false"
+                          [creditCardNumber]="'6321432143214321'"></yl-credit-card-input>
     <br>
-    <yl-credit-card-input [maxWidth]="15" [isReadonly]="true" [creditCardNumber]="'6321432143214321'"></yl-credit-card-input>
+    <yl-credit-card-input [maxWidth]="15" [isReadonly]="true"
+                          [creditCardNumber]="'6321432143214321'"></yl-credit-card-input>
   </div>
-
 </yl-card>
 
+<!--Twitter Post-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter post'" [subTitle]="'Components'">
- <yl-twitter-post body></yl-twitter-post>
+  <yl-twitter-post body></yl-twitter-post>
 </yl-card>
-<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter post'" [subTitle]="'Components'">
+
+<!--LinkedIn Post-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'LinkedIn post'" [subTitle]="'Components'">
   <yl-linked-in-post body></yl-linked-in-post>
 </yl-card>
 
+<!--Modal window-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Modal window'" [subTitle]="'Components'">
   <div body>
     <yl-modal [title]="'Modal example'" #modal>
       <p>Some content</p>
     </yl-modal>
-
   </div>
   <div footer>
     <button (click)="modal.openModal()">Open modal</button>
   </div>
 </yl-card>
 
-
-
+<!--Quote-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Quote'" [subTitle]="'Components'">
+  <yl-quote body [quote]="'The way to get started is to quit talking and begin doing.'" [author]="'Walt Disney'" [occupation]="'American animator,writer,voice actor,film producer'"></yl-quote>
+</yl-card>
+<!--Switch - Toggle-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Toggle'" [subTitle]="'Components'">
+  <yl-toggle body [isOn]="false"></yl-toggle>
+</yl-card>
 

@@ -1,0 +1,26 @@
+@import "../../../styles";
+.toggle__container{
+  position: relative;
+  width: 50px;
+  border: 1px solid $light-grey;
+  padding: 3px;
+  border-radius: 15px;
+  height: 20px;
+  cursor: pointer;
+
+  .toggle__value{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 15px;
+    background-color: $green;
+    height: 15px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    &.isOff{
+      background-color: $red;
+      right: 65%;
+    }
+  }
+}

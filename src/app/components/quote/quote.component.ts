@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'yl-quote',
@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quote.component.scss']
 })
 export class QuoteComponent implements OnInit {
-
+@Input()quote: string = '';
+@Input()author: string = '';
+@Input()occupation: string = '';
   constructor() { }
 
   ngOnInit(): void {
