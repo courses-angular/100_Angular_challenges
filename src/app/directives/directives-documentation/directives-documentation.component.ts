@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'yl-directives-documentation',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesDocumentationComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  onLog(): void {
+    console.log(`%c Click every 500ms`, 'color: red');
+  }
 }

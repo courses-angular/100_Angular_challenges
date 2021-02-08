@@ -17,6 +17,7 @@ import { LoaderV2Component } from './loader-v2/loader-v2.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import {LinkedInPostComponent} from './linked-in-post/linked-in-post.component';
 import { ModalComponent } from './modal/modal.component';
+import { QuoteComponent } from './quote/quote.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { ModalComponent } from './modal/modal.component';
         TwitterPostComponent,
         LinkedInPostComponent,
         ModalComponent,
+        QuoteComponent,
     ],
   exports: [
     ToolbarComponent,

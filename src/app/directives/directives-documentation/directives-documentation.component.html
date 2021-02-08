@@ -1,1 +1,3 @@
-<p>directives-documentation works!</p>
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Debounce click'" [subTitle]="'Directives'">
+  <button body (debounceClick)="onLog()" ylDebounceClick>Log</button>
+</yl-card>
