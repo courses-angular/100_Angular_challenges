@@ -36,6 +36,7 @@ import { LoaderV2Component } from './loader-v2/loader-v2.component';
     TopOfPageComponent,
     LoaderComponent,
     CreditCardInputComponent,
+    LoaderV2Component,
   ],
   imports: [
     CommonModule,

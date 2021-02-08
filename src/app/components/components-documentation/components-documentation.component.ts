@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {IAccordionModel} from '../accordion/accordion.model';
+import {LoaderType} from '../models/loader-type';
 
 @Component({
   selector: 'yl-components-documentation',
@@ -22,6 +23,7 @@ export class ComponentsDocumentationComponent implements OnInit {
       isExpanded: false
     }
   ];
+  loaderType: LoaderType = LoaderType.Loading;
   constructor() { }
 
   ngOnInit(): void {
