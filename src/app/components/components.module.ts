@@ -19,6 +19,7 @@ import {LinkedInPostComponent} from './linked-in-post/linked-in-post.component';
 import { ModalComponent } from './modal/modal.component';
 import { QuoteComponent } from './quote/quote.component';
 import { ToggleComponent } from './toggle/toggle.component';
+import { ReachTextViewerComponent } from './reach-text-viewer/reach-text-viewer.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { ToggleComponent } from './toggle/toggle.component';
         ModalComponent,
         QuoteComponent,
         ToggleComponent,
+        ReachTextViewerComponent,
     ],
   exports: [
     ToolbarComponent,
