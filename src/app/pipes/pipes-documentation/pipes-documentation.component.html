@@ -4,12 +4,22 @@
     {{'   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque consectetur, corporis culpa cum deserunt doloribus eaque earum, eligendi enim illum ipsa laudantium mollitia perferendis quaerat quis sapiente tenetur vitae!' | truncate: 70}}
   </p>
 </yl-card>
-
+<!--Credit card formatter pipe-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit card formatter pipe'" [subTitle]="'Pipes'">
   <div body>
     <p>{{'1111222233334444' | creditCardFormatter}}</p>
     <p>{{'111111111111111111111111111111' | creditCardFormatter}}</p>
     <p>{{'a111222233334444' | creditCardFormatter}}</p>
+  </div>
+</yl-card>
+<!--Flatten pipe-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Flatten pipe'" [subTitle]="'Pipes'">
+  <div body>
+    {{flattenData | ylFlatten}}
+  </div>
+  <div footer>
+    <button (click)="onModifyFlatten()">Modify</button>
+    <button (click)="onReassignFlatten()">Reassign</button>
   </div>
 </yl-card>
 

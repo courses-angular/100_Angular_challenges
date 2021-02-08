@@ -51,6 +51,21 @@
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter post'" [subTitle]="'Components'">
  <yl-twitter-post body></yl-twitter-post>
 </yl-card>
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter post'" [subTitle]="'Components'">
+  <yl-linked-in-post body></yl-linked-in-post>
+</yl-card>
+
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Modal window'" [subTitle]="'Components'">
+  <div body>
+    <yl-modal [title]="'Modal example'" #modal>
+      <p>Some content</p>
+    </yl-modal>
+
+  </div>
+  <div footer>
+    <button (click)="modal.openModal()">Open modal</button>
+  </div>
+</yl-card>
 
 
 

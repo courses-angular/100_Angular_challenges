@@ -15,21 +15,25 @@ import { CreditCardInputComponent } from './creadit-card-input/credit-card-input
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LoaderV2Component } from './loader-v2/loader-v2.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
+import {LinkedInPostComponent} from './linked-in-post/linked-in-post.component';
+import { ModalComponent } from './modal/modal.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ToolbarComponent,
-    AccordionComponent,
-    ProgressBarComponent,
-    StarRatingsComponent,
-    TopOfPageComponent,
-    LoaderComponent,
-    CreditCardInputComponent,
-    LoaderV2Component,
-    TwitterPostComponent,
-  ],
+    declarations: [
+        AppComponent,
+        ToolbarComponent,
+        AccordionComponent,
+        ProgressBarComponent,
+        StarRatingsComponent,
+        TopOfPageComponent,
+        LoaderComponent,
+        CreditCardInputComponent,
+        LoaderV2Component,
+        TwitterPostComponent,
+        LinkedInPostComponent,
+        ModalComponent,
+    ],
   exports: [
     ToolbarComponent,
     AccordionComponent,
@@ -40,6 +44,8 @@ import { TwitterPostComponent } from './twitter-post/twitter-post.component';
     CreditCardInputComponent,
     LoaderV2Component,
     TwitterPostComponent,
+    LinkedInPostComponent,
+    ModalComponent,
   ],
   imports: [
     CommonModule,
