@@ -24,6 +24,7 @@ import { DebounceSearchComponent } from './debounce-search/debounce-search.compo
 import { SearchListComponent } from './search-list/search-list.component';
 import {PipesModule} from '../pipes/pipes.module';
 import { CounterComponent } from './counter/counter.component';
+import { SimpleTableComponent } from './simple-table/simple-table.component';
 
 
 @NgModule({
@@ -46,26 +47,28 @@ import { CounterComponent } from './counter/counter.component';
         DebounceSearchComponent,
         SearchListComponent,
         CounterComponent,
+        SimpleTableComponent,
     ],
-  exports: [
-    ToolbarComponent,
-    AccordionComponent,
-    ProgressBarComponent,
-    StarRatingsComponent,
-    TopOfPageComponent,
-    LoaderComponent,
-    CreditCardInputComponent,
-    LoaderV2Component,
-    TwitterPostComponent,
-    LinkedInPostComponent,
-    ModalComponent,
-    QuoteComponent,
-    ToggleComponent,
-    ReachTextViewerComponent,
-    DebounceSearchComponent,
-    SearchListComponent,
-    CounterComponent,
-  ],
+    exports: [
+        ToolbarComponent,
+        AccordionComponent,
+        ProgressBarComponent,
+        StarRatingsComponent,
+        TopOfPageComponent,
+        LoaderComponent,
+        CreditCardInputComponent,
+        LoaderV2Component,
+        TwitterPostComponent,
+        LinkedInPostComponent,
+        ModalComponent,
+        QuoteComponent,
+        ToggleComponent,
+        ReachTextViewerComponent,
+        DebounceSearchComponent,
+        SearchListComponent,
+        CounterComponent,
+        SimpleTableComponent,
+    ],
   imports: [
     CommonModule,
     ComponentsRoutingModule,

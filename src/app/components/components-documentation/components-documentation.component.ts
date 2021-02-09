@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {IAccordionModel} from '../accordion/accordion.model';
 import {LoaderType} from '../models/loader-type';
 
@@ -25,6 +25,7 @@ export class ComponentsDocumentationComponent implements OnInit {
   ];
   searchItems: string[] = ['US', 'Argentina', 'Israel', 'France', 'UK'];
   loaderType: LoaderType = LoaderType.Loading;
+
 
   constructor() {
   }
