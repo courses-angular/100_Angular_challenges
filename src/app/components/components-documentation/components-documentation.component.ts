@@ -25,6 +25,11 @@ export class ComponentsDocumentationComponent implements OnInit {
   ];
   searchItems: string[] = ['US', 'Argentina', 'Israel', 'France', 'UK'];
   loaderType: LoaderType = LoaderType.Loading;
+  tabs: { title: string, active: boolean }[] = [
+    { title: 'Tab 1', active: true },
+    { title: 'Tab 2', active: false },
+  ];
+   selectedTab = 0;
 
 
   constructor() {

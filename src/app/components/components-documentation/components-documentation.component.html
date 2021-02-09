@@ -126,3 +126,11 @@
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Pagination'" [subTitle]="'Components'">
  <yl-pagination [totalItems]="200" body></yl-pagination>
 </yl-card>
+
+<!--Tabs-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Tabs'" [subTitle]="'Components'">
+ <yl-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event">
+   <yl-pagination *ngIf="selectedTab === 0" [totalItems]="200"></yl-pagination>
+   <yl-counter *ngIf="selectedTab === 1" [width]="250"></yl-counter>
+ </yl-tabs>
+</yl-card>

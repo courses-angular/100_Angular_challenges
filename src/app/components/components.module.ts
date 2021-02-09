@@ -2,13 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ComponentsRoutingModule } from './components-routing.module';
-import {AppComponent} from '../app.component';
-import {ToolbarComponent} from './toolbar/toolbar.component';
-import {CardComponent} from './card/card.component';
 import {AccordionComponent} from './accordion/accordion.component';
 import {ProgressBarComponent} from './progress-bar/progress-bar.component';
 import {StarRatingsComponent} from './star-ratings/star-ratings.component';
-import {TopOfPageComponent} from './top-of-page/top-of-page.component';
 import {SharedModule} from '../shared/shared.module';
 import { LoaderComponent } from './loader/loader.component';
 import { CreditCardInputComponent } from './creadit-card-input/credit-card-input.component';
@@ -25,16 +21,18 @@ import { SearchListComponent } from './search-list/search-list.component';
 import {PipesModule} from '../pipes/pipes.module';
 import { CounterComponent } from './counter/counter.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
+import { PaginationComponent } from './pagination/pagination.component';
+import { TabsComponent } from './tabs/tabs.component';
+import {ComponentsDocumentationComponent} from './components-documentation/components-documentation.component';
+import {DirectivesModule} from '../directives/directives.module';
 
 
 @NgModule({
     declarations: [
-        AppComponent,
-        ToolbarComponent,
+      ComponentsDocumentationComponent,
         AccordionComponent,
         ProgressBarComponent,
         StarRatingsComponent,
-        TopOfPageComponent,
         LoaderComponent,
         CreditCardInputComponent,
         LoaderV2Component,
@@ -48,30 +46,16 @@ import { SimpleTableComponent } from './simple-table/simple-table.component';
         SearchListComponent,
         CounterComponent,
         SimpleTableComponent,
+        PaginationComponent,
+        TabsComponent,
     ],
-    exports: [
-        ToolbarComponent,
-        AccordionComponent,
-        ProgressBarComponent,
-        StarRatingsComponent,
-        TopOfPageComponent,
-        LoaderComponent,
-        CreditCardInputComponent,
-        LoaderV2Component,
-        TwitterPostComponent,
-        LinkedInPostComponent,
-        ModalComponent,
-        QuoteComponent,
-        ToggleComponent,
-        ReachTextViewerComponent,
-        DebounceSearchComponent,
-        SearchListComponent,
-        CounterComponent,
-        SimpleTableComponent,
-    ],
+  exports: [
+
+  ],
   imports: [
     CommonModule,
     ComponentsRoutingModule,
+    DirectivesModule,
     SharedModule,
     FormsModule,
     ReactiveFormsModule,

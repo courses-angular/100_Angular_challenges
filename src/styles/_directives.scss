@@ -1,0 +1,15 @@
+@import "../styles/colors";
+.ripple{
+  background-position: center;
+  transition: all 0.8s;
+
+  &:hover{
+    color: #ffffff;
+    background: $blue radial-gradient(circle,transparent 1%,$blue,center/15000%);
+  }
+  &:active{
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background-color 0s;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../styles";
+.tabs{
+  display: flex;
+  margin-bottom: 10px;
+  list-style: none;
+
+  li.tab{
+    cursor: pointer;
+    margin-right: 1rem;
+    padding: 2px;
+    text-align: center;
+    &.isActive{
+      border-bottom: 3px solid $blue;
+    }
+  }
+}

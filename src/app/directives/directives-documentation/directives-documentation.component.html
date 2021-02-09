@@ -1,3 +1,11 @@
+
+<!--Debounce click-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Debounce click'" [subTitle]="'Directives'">
   <button body (debounceClick)="onLog()" ylDebounceClick>Log</button>
+</yl-card>
+<!--Ripple-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Ripple'" [subTitle]="'Directives'">
+  <div body>
+    <button ylRipple="ripple" style="border: 1px solid black;text-align: center;padding: 10px">Ripple button</button>
+  </div>
 </yl-card>
