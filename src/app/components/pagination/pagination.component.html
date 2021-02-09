@@ -1,0 +1,17 @@
+<ul>
+  <li>
+    <button (click)="setPage(currentPage - step)"  [disabled]="isPreviousPageDisable">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+  </li>
+
+<li *ngFor="let page of pages">
+  <button (click)="setPage(page)" [class.currentPage]="currentPage === page">{{page}}</button>
+</li>
+  <li>
+
+    <button  (click)="setPage(currentPage + step)" [disabled]="isNextPageDisable" >
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </li>
+</ul>
