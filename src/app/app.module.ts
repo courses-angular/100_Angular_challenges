@@ -15,6 +15,7 @@ import {OtherModule} from './other/other.module';
 import {ToolbarComponent} from './components/toolbar/toolbar.component';
 import {TopOfPageComponent} from './components/top-of-page/top-of-page.component';
 import {PipesModule} from './pipes/pipes.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import {PipesModule} from './pipes/pipes.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     DirectivesModule,
     SharedModule,

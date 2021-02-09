@@ -1,1 +1,9 @@
-<p>other-documentation works!</p>
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Fade-in-out animation'" [subTitle]="'Other'">
+  <div body>
+    <h2 [@fadeInOutAnimation] *ngIf="isInDOM">Hello</h2>
+    <h2 [@fadeInOutAnimation] *ngIf="!isInDOM">World</h2>
+  </div>
+  <div footer>
+    <button (click)="isInDOM = !isInDOM">Toggle Animation</button>
+  </div>
+</yl-card>
