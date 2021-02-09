@@ -20,6 +20,8 @@ import { ModalComponent } from './modal/modal.component';
 import { QuoteComponent } from './quote/quote.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { ReachTextViewerComponent } from './reach-text-viewer/reach-text-viewer.component';
+import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
+import { SearchListComponent } from './search-list/search-list.component';
 
 
 @NgModule({
@@ -39,6 +41,8 @@ import { ReachTextViewerComponent } from './reach-text-viewer/reach-text-viewer.
         QuoteComponent,
         ToggleComponent,
         ReachTextViewerComponent,
+        DebounceSearchComponent,
+        SearchListComponent,
     ],
   exports: [
     ToolbarComponent,
@@ -55,6 +59,7 @@ import { ReachTextViewerComponent } from './reach-text-viewer/reach-text-viewer.
     QuoteComponent,
     ToggleComponent,
     ReachTextViewerComponent,
+    DebounceSearchComponent,
   ],
   imports: [
     CommonModule,

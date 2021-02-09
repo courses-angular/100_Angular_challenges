@@ -24,9 +24,14 @@ export class ComponentsDocumentationComponent implements OnInit {
     }
   ];
   loaderType: LoaderType = LoaderType.Loading;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  onDebounceExampleMethod(event: string): void {
+    console.log('Searching...', event);
+  }
 }

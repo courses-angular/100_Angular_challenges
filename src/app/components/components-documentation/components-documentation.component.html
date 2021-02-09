@@ -103,3 +103,8 @@
 
 </yl-card>
 
+<!--Rich Text Viewer-->
+
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Toggle'" [subTitle]="'Components'">
+  <yl-debounce-search body [width]="250" [placeholder]="'Search'" (searchUpdate)="onDebounceExampleMethod($event)"></yl-debounce-search>
+</yl-card>
