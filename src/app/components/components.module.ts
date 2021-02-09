@@ -25,30 +25,32 @@ import { PaginationComponent } from './pagination/pagination.component';
 import { TabsComponent } from './tabs/tabs.component';
 import {ComponentsDocumentationComponent} from './components-documentation/components-documentation.component';
 import {DirectivesModule} from '../directives/directives.module';
+import {SortTableComponent} from './sort-table/sort-table.component';
 
 
 @NgModule({
-    declarations: [
-      ComponentsDocumentationComponent,
-        AccordionComponent,
-        ProgressBarComponent,
-        StarRatingsComponent,
-        LoaderComponent,
-        CreditCardInputComponent,
-        LoaderV2Component,
-        TwitterPostComponent,
-        LinkedInPostComponent,
-        ModalComponent,
-        QuoteComponent,
-        ToggleComponent,
-        ReachTextViewerComponent,
-        DebounceSearchComponent,
-        SearchListComponent,
-        CounterComponent,
-        SimpleTableComponent,
-        PaginationComponent,
-        TabsComponent,
-    ],
+  declarations: [
+    ComponentsDocumentationComponent,
+    AccordionComponent,
+    ProgressBarComponent,
+    StarRatingsComponent,
+    LoaderComponent,
+    CreditCardInputComponent,
+    LoaderV2Component,
+    TwitterPostComponent,
+    LinkedInPostComponent,
+    ModalComponent,
+    QuoteComponent,
+    ToggleComponent,
+    ReachTextViewerComponent,
+    DebounceSearchComponent,
+    SearchListComponent,
+    CounterComponent,
+    SimpleTableComponent,
+    PaginationComponent,
+    TabsComponent,
+    SortTableComponent,
+  ],
   exports: [
 
   ],

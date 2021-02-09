@@ -6,6 +6,7 @@ table{
   border-right: 1px solid rgba(0,0,0,0.12);
   @include box-shadow();
   thead{
+    cursor: pointer;
     th{
       text-transform: uppercase;
       padding: 10px 20px;

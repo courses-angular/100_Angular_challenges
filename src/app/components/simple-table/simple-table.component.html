@@ -1,7 +1,10 @@
 <table *ngIf="tableData && tableData.length > 0">
   <thead>
     <tr>
-      <th *ngFor="let header of tableData[0] | keyvalue">{{header.key}}</th>
+
+      <th *ngFor="let header of tableData[0] | keyvalue; let i=index" (click)="onSelectHeader(header.key.toString(),header.value)">{{header.key}}
+        <i class="fas" [class.fa-chevron-up]="!directionForIcon" [class.fa-chevron-down]="directionForIcon" ></i>
+      </th>
     </tr>
   </thead>
   <tbody>

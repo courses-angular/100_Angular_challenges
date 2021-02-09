@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'yl-simple-table',
@@ -6,7 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./simple-table.component.scss']
 })
 export class SimpleTableComponent implements OnInit {
-  @Input()tableData: any[] = [
+  @Input() tableData: any[] = [
     {
       firstName: 'Alex',
       lastname: 'Ivanov',
@@ -34,10 +34,17 @@ export class SimpleTableComponent implements OnInit {
     }
   ];
 
+  @Output() headerSelected: EventEmitter<{ key: string, value: any }> = new EventEmitter<{key: string; value: any}>();
+  directionForIcon: boolean = true;
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+
+  onSelectHeader(key: string, value: any): void {
+    this.directionForIcon = !this.directionForIcon;
+    this.headerSelected.emit({value, key});
   }
 
 }
