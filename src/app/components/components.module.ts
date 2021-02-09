@@ -23,6 +23,7 @@ import { ReachTextViewerComponent } from './reach-text-viewer/reach-text-viewer.
 import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
 import { SearchListComponent } from './search-list/search-list.component';
 import {PipesModule} from '../pipes/pipes.module';
+import { CounterComponent } from './counter/counter.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import {PipesModule} from '../pipes/pipes.module';
         ReachTextViewerComponent,
         DebounceSearchComponent,
         SearchListComponent,
+        CounterComponent,
     ],
   exports: [
     ToolbarComponent,
@@ -62,6 +64,7 @@ import {PipesModule} from '../pipes/pipes.module';
     ReachTextViewerComponent,
     DebounceSearchComponent,
     SearchListComponent,
+    CounterComponent,
   ],
   imports: [
     CommonModule,
