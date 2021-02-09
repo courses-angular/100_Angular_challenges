@@ -22,6 +22,7 @@ import { ToggleComponent } from './toggle/toggle.component';
 import { ReachTextViewerComponent } from './reach-text-viewer/reach-text-viewer.component';
 import { DebounceSearchComponent } from './debounce-search/debounce-search.component';
 import { SearchListComponent } from './search-list/search-list.component';
+import {PipesModule} from '../pipes/pipes.module';
 
 
 @NgModule({
@@ -60,13 +61,15 @@ import { SearchListComponent } from './search-list/search-list.component';
     ToggleComponent,
     ReachTextViewerComponent,
     DebounceSearchComponent,
+    SearchListComponent,
   ],
   imports: [
     CommonModule,
     ComponentsRoutingModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PipesModule
   ]
 })
 export class ComponentsModule { }

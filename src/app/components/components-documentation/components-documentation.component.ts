@@ -23,6 +23,7 @@ export class ComponentsDocumentationComponent implements OnInit {
       isExpanded: false
     }
   ];
+  searchItems: string[] = ['US', 'Argentina', 'Israel', 'France', 'UK'];
   loaderType: LoaderType = LoaderType.Loading;
 
   constructor() {

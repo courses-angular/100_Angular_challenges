@@ -3,6 +3,7 @@
   display: grid;
   grid-gap: 10px;
   border-radius: 3px;
+  margin-bottom: 2rem;
   @include box-shadow();
 
   .header{

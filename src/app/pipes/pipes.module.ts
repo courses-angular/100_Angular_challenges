@@ -17,7 +17,7 @@ import { FilterTermPipe } from './filter-term/filter-term.pipe';
     PipesRoutingModule,
     SharedModule
   ],
-  exports: [PipesDocumentationComponent]
+  exports: [PipesDocumentationComponent, FilterTermPipe]
 })
 export class PipesModule {
 }

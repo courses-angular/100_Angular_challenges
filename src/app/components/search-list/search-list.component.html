@@ -1,1 +1,15 @@
-<p>search-list works!</p>
+<yl-debounce-search
+  [searchTerm]="searchTerm"
+  [placeholder]="'Search items'"
+  [width]="250" (searchUpdate)="updateSearchTerm($event)">
+
+</yl-debounce-search>
+
+<ul *ngIf="searchTerm && !isSelected">
+  <div class="item__container">
+    <li *ngFor="let item of items | filterTerm: searchTerm" (click)="onSelectItem(item)">
+      {{item}}
+    </li>
+  </div>
+</ul>
+
