@@ -1,3 +1,5 @@
+<h1>Other - Guards,Animations & More</h1>
+<!--Fade-in-out animation-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Fade-in-out animation'" [subTitle]="'Other'">
   <div body>
     <h2 [@fadeInOutAnimation] *ngIf="isInDOM">Hello</h2>
@@ -5,5 +7,16 @@
   </div>
   <div footer>
     <button (click)="isInDOM = !isInDOM">Toggle Animation</button>
+  </div>
+</yl-card>
+
+<!--Form dirty guard-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Form dirty guard'" [subTitle]="'Other'">
+  <div body>
+    <form action="" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <input type="text" style="width: 30%" formControlName="name">
+      <button type="submit">Submit</button>
+    </form>
+
   </div>
 </yl-card>

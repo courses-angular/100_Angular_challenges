@@ -26,6 +26,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import {ComponentsDocumentationComponent} from './components-documentation/components-documentation.component';
 import {DirectivesModule} from '../directives/directives.module';
 import {SortTableComponent} from './sort-table/sort-table.component';
+import { EmailFormComponent } from './email-form/email-form.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import {SortTableComponent} from './sort-table/sort-table.component';
     PaginationComponent,
     TabsComponent,
     SortTableComponent,
+    EmailFormComponent,
   ],
   exports: [
 

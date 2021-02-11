@@ -1,1 +1,13 @@
 @import "./src/app/components/components-documentation/components-documentation.component";
+h1{
+  margin-bottom: 2rem;
+  padding: 10px ;
+  border-bottom: 1px solid #ccc;
+}
+div{
+  input{
+    display: block;
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+}

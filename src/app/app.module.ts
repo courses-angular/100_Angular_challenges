@@ -16,6 +16,8 @@ import {ToolbarComponent} from './components/toolbar/toolbar.component';
 import {TopOfPageComponent} from './components/top-of-page/top-of-page.component';
 import {PipesModule} from './pipes/pipes.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
+import {ServiceModule} from './services/service.module';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     SharedModule,
     ComponentsModule,
     OtherModule,
-    PipesModule
+    PipesModule,
+    ServiceModule,
+    HttpClientModule
 
   ],
   providers: [],

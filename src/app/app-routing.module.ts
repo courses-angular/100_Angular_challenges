@@ -24,7 +24,7 @@ const routes: Routes = [
   },
   {
     path: 'services',
-    component: ServicesDocumentationComponent
+    loadChildren: () => import('./services/service.module').then(m => m.ServiceModule)
   }
 ];
 
