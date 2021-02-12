@@ -27,6 +27,8 @@ import {ComponentsDocumentationComponent} from './components-documentation/compo
 import {DirectivesModule} from '../directives/directives.module';
 import {SortTableComponent} from './sort-table/sort-table.component';
 import { EmailFormComponent } from './email-form/email-form.component';
+import { RibbonComponent } from './ribbon/ribbon.component';
+import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 
 
 @NgModule({
@@ -52,6 +54,8 @@ import { EmailFormComponent } from './email-form/email-form.component';
     TabsComponent,
     SortTableComponent,
     EmailFormComponent,
+    RibbonComponent,
+    ButtonToggleComponent,
   ],
   exports: [
 

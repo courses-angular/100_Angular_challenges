@@ -15,7 +15,6 @@
   <yl-progress-bar body [value]="progressValue">
   </yl-progress-bar>
   <button (click)="progressValue = 75" footer>Update</button>
-
 </yl-card>
 
 
@@ -144,4 +143,29 @@
 <!--Email form-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Email form'" [subTitle]="'Components'">
   <yl-email-form body></yl-email-form>
+</yl-card>
+
+<!--Ribbon-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Ribbon'" [subTitle]="'Components'">
+  <div body>
+    <yl-ribbon  [content]="'Ribbon element'" [location]="ribbonStyle.location" [type]="ribbonStyle.type"></yl-ribbon>
+    <div footer>
+      <div class="actions_location">
+        <button (click)="ribbonStyle.location = RibbonLocation.TopRight">Top right</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.BottomRight">Bottom right</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.TopLeft">Top left</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.BottomLeft">Bottom left</button>
+        <button (click)="ribbonStyle.type = RibbonType.Success">Success</button>
+        <button (click)="ribbonStyle.type = RibbonType.Error">Error</button>
+        <button (click)="ribbonStyle.type = RibbonType.Info">Info</button>
+        <button (click)="ribbonStyle.type = RibbonType.Warning">Warning</button>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
 </yl-card>

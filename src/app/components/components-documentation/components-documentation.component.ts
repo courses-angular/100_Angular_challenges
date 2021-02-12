@@ -1,6 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {IAccordionModel} from '../accordion/accordion.model';
 import {LoaderType} from '../models/loader-type';
+import {RibbonType} from '../ribbon/ribbon-type';
+import {RibbonLocation} from '../ribbon/ribbon-location';
 
 @Component({
   selector: 'yl-components-documentation',
@@ -26,11 +28,13 @@ export class ComponentsDocumentationComponent implements OnInit {
   searchItems: string[] = ['US', 'Argentina', 'Israel', 'France', 'UK'];
   loaderType: LoaderType = LoaderType.Loading;
   tabs: { title: string, active: boolean }[] = [
-    { title: 'Tab 1', active: true },
-    { title: 'Tab 2', active: false },
+    {title: 'Tab 1', active: true},
+    {title: 'Tab 2', active: false},
   ];
-   selectedTab = 0;
-
+  selectedTab = 0;
+  public RibbonType = RibbonType;
+  public RibbonLocation = RibbonLocation;
+  public ribbonStyle = {type: RibbonType.Info, location: RibbonLocation.TopLeft};
 
   constructor() {
   }
