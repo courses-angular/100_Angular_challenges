@@ -160,12 +160,14 @@
         <button (click)="ribbonStyle.type = RibbonType.Info">Info</button>
         <button (click)="ribbonStyle.type = RibbonType.Warning">Warning</button>
       </div>
-
-
-
     </div>
-
-
   </div>
 
+</yl-card>
+
+<!--Button toggle-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Button toggle'" [subTitle]="'Components'">
+  <div body>
+    <yl-button-toggle [options]="buttonToggleOptions" (selection)="onSelectButton($event)"></yl-button-toggle>
+  </div>
 </yl-card>

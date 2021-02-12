@@ -1,0 +1,36 @@
+//@import "../components-documentation/components-documentation.component";
+@import "src/styles";
+.button-toggle_container{
+  display: flex;
+  button{
+    //margin-right: .75rem;
+    background-color:#ffffff;
+    border: 1px solid $blue;
+    padding: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:first-child{
+      border-right: 0;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+    &:last-child{
+      border-left: 0;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    &:only-child{
+      border: 1px solid $blue;
+    }
+    &:hover{
+      background-color: $blue;
+      color: #ffffff;
+    }
+    &.isActive{
+      background-color: $blue;
+      color: #ffffff;
+    }
+  }
+}
+

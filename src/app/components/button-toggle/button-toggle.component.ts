@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {ButtonMetaModel} from './button-meta.model';
 
 @Component({
   selector: 'yl-button-toggle',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button-toggle.component.scss']
 })
 export class ButtonToggleComponent implements OnInit {
+  @Input() options: ButtonMetaModel[] = [];
+  @Output() selection: EventEmitter<ButtonMetaModel> = new EventEmitter<ButtonMetaModel>();
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  onClickButton(selectedOption: ButtonMetaModel): void {
+    this.options.forEach((option) => {
+      option.isActive = selectedOption === option;
+    });
+    this.selection.emit(selectedOption);
+  }
 }

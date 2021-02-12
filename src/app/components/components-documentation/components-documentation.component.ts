@@ -3,6 +3,7 @@ import {IAccordionModel} from '../accordion/accordion.model';
 import {LoaderType} from '../models/loader-type';
 import {RibbonType} from '../ribbon/ribbon-type';
 import {RibbonLocation} from '../ribbon/ribbon-location';
+import {ButtonMetaModel} from '../button-toggle/button-meta.model';
 
 @Component({
   selector: 'yl-components-documentation',
@@ -36,6 +37,12 @@ export class ComponentsDocumentationComponent implements OnInit {
   public RibbonLocation = RibbonLocation;
   public ribbonStyle = {type: RibbonType.Info, location: RibbonLocation.TopLeft};
 
+  buttonToggleOptions: ButtonMetaModel[] = [
+    new ButtonMetaModel({id: 1, title: 'Bold'}),
+    new ButtonMetaModel({id: 2, title: 'Italic'}),
+    new ButtonMetaModel({id: 3, title: 'underline'}),
+  ];
+
   constructor() {
   }
 
@@ -44,5 +51,9 @@ export class ComponentsDocumentationComponent implements OnInit {
 
   onDebounceExampleMethod(event: string): void {
     console.log('Searching...', event);
+  }
+
+  onSelectButton(button: ButtonMetaModel): void {
+    console.log('Button selected:', button);
   }
 }

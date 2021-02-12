@@ -1,1 +1,3 @@
-<p>button-toggle works!</p>
+<div class="button-toggle_container">
+  <button *ngFor="let button of options" (click)="onClickButton(button)" [class.isActive]="button.isActive">{{button.title}}</button>
+</div>
