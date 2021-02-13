@@ -29,6 +29,9 @@ import {SortTableComponent} from './sort-table/sort-table.component';
 import { EmailFormComponent } from './email-form/email-form.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
+import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
+import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 
 
 @NgModule({
@@ -56,6 +59,9 @@ import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
     EmailFormComponent,
     RibbonComponent,
     ButtonToggleComponent,
+    BannerCutOutComponent,
+    SnackbarComponent,
+    SimplePopupComponent,
   ],
   exports: [
 

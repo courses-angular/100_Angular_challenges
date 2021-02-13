@@ -171,3 +171,16 @@
     <yl-button-toggle [options]="buttonToggleOptions" (selection)="onSelectButton($event)"></yl-button-toggle>
   </div>
 </yl-card>
+
+<!--Banner cut out-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Banner cut out'" [subTitle]="'Components'">
+  <yl-banner-cut-out body></yl-banner-cut-out>
+</yl-card>
+
+<!--Snackbar-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Snackbar'" [subTitle]="'Components'">
+  <div body>
+    <yl-snackbar [message]="'Snackbar example'" #snackbar></yl-snackbar>
+    <button (click)="showSnackbar()">Show snackbar</button>
+  </div>
+</yl-card>
