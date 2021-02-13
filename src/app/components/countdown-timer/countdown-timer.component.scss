@@ -1,0 +1,23 @@
+@import "src/styles";
+
+.countdown_container{
+  text-align: center;
+  padding: 25px;
+  margin: 0 auto;
+  .time_container{
+    display: inline-block;
+    background-color: $blue;
+    padding: 20px;
+    .time{
+      display: inline-grid;
+      align-items: center;
+      background-color: #fff;
+      min-width: 120px;
+      height: 80px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-weight: bolder;
+      margin: 10px;
+    }
+  }
+}
