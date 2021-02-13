@@ -184,3 +184,12 @@
     <button (click)="showSnackbar()">Show snackbar</button>
   </div>
 </yl-card>
+
+<!--Simple popup-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Simple popup'" [subTitle]="'Components'">
+  <div body>
+    <yl-simple-popup [message]="'Simple Popup Component'">
+      <h2>Hello popup</h2>
+    </yl-simple-popup>
+  </div>
+</yl-card>

@@ -1,1 +1,4 @@
-<p>simple-popup works!</p>
+<div class="simple-popup_container" (mouseover)="showPopupOnHover()" (mouseout)="hidePopup()" (click)="showPopupOnClick()">
+  <ng-content></ng-content>
+  <span class="popup_text" [@fadeInOutAnimation] *ngIf="isShown">{{message}}</span>
+</div>
