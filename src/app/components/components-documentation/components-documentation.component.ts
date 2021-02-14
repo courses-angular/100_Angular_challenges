@@ -5,6 +5,7 @@ import {RibbonType} from '../ribbon/ribbon-type';
 import {RibbonLocation} from '../ribbon/ribbon-location';
 import {ButtonMetaModel} from '../button-toggle/button-meta.model';
 import {SnackbarComponent} from '../snackbar/snackbar.component';
+import {SnackbarService} from '../../services/snackbar/snackbar.service';
 
 @Component({
   selector: 'yl-components-documentation',
@@ -39,7 +40,6 @@ export class ComponentsDocumentationComponent implements OnInit {
   public ribbonStyle = {type: RibbonType.Info, location: RibbonLocation.TopLeft};
 
 
-
   buttonToggleOptions: ButtonMetaModel[] = [
     new ButtonMetaModel({id: 1, title: 'Bold'}),
     new ButtonMetaModel({id: 2, title: 'Italic'}),
@@ -49,7 +49,8 @@ export class ComponentsDocumentationComponent implements OnInit {
   // @ViewChild('snackbar') snackbar: SnackbarComponent; // With a templateRef #snackbar
   @ViewChild(SnackbarComponent) snackbar: SnackbarComponent;
 
-  constructor() {
+
+  constructor(private snackbarService: SnackbarService) {
   }
 
   ngOnInit(): void {
@@ -63,7 +64,11 @@ export class ComponentsDocumentationComponent implements OnInit {
     console.log('Button selected:', button);
   }
 
-  showSnackbar():void {
-    this.snackbar.showSnackbar();
+  showSnackbar(): void {
+    this.snackbar.showSnackbar('Snackbar from component');
+  }
+
+  callSnackbarFromService(): void {
+    this.snackbarService.callSnackbar('Snackbar from service');
   }
 }

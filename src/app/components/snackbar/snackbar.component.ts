@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {of} from 'rxjs';
 import {delay} from 'rxjs/operators';
+import {SnackbarService} from '../../services/snackbar/snackbar.service';
 
 @Component({
   selector: 'yl-snackbar',
@@ -11,15 +12,19 @@ export class SnackbarComponent implements OnInit {
   @Input() message: string = '';
   isShown: boolean = false;
 
-  constructor() {
+  constructor(private snackbarService: SnackbarService) {
   }
 
   ngOnInit(): void {
+    this.snackbarService.snackbar$.subscribe(message => {
+      this.showSnackbar(message);
+    });
   }
 
-  showSnackbar(): void {
-    this.isShown = true;
 
+  showSnackbar(message: string): void {
+    this.isShown = true;
+    this.message = message;
     const subscription = of(null).pipe(delay(2900)).subscribe({
       complete: () => {
         this.isShown = false;

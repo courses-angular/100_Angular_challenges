@@ -61,13 +61,10 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
     RibbonComponent,
     ButtonToggleComponent,
     BannerCutOutComponent,
-    SnackbarComponent,
     SimplePopupComponent,
     CountdownTimerComponent,
   ],
-  exports: [
 
-  ],
   imports: [
     CommonModule,
     ComponentsRoutingModule,

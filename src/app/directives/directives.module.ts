@@ -7,10 +7,11 @@ import {SharedModule} from '../shared/shared.module';
 import { RippleDirective } from './ripple/ripple.directive';
 import {DirectivesDocumentationComponent} from './directives-documentation/directives-documentation.component';
 import { ScaleDirective } from './scale/scale.directive';
+import { CopyDirective } from './copy/copy.directive';
 
 
 @NgModule({
-  declarations: [DirectivesDocumentationComponent,DebounceClickDirective, RippleDirective, ScaleDirective],
+  declarations: [DirectivesDocumentationComponent,DebounceClickDirective, RippleDirective, ScaleDirective, CopyDirective],
     exports: [
         DebounceClickDirective,
         RippleDirective
