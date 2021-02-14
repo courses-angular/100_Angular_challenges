@@ -1,4 +1,4 @@
-<h1>Directives</h1>
+<h1 style="height: 300px">Directives</h1>
 <!--Debounce click-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Debounce click'" [subTitle]="'Directives'">
   <button body (debounceClick)="onLog()" ylDebounceClick>Log</button>
@@ -19,4 +19,11 @@
 <!--Copy-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Copy'" [subTitle]="'Directives'">
   <button body ylCopy="Directive copy example">Copy</button>
+</yl-card>
+
+<!--Lazy load image-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Lazy load image'" [subTitle]="'Directives'" >
+  <div body>
+    <img ylLazyLoadImage src="https://images.pexels.com/photos/3861976/pexels-photo-3861976.jpeg?cs=srgb&dl=pexels-thisisengineering-3861976.jpg&fm=jpg" alt="code img" width="500px">
+  </div>
 </yl-card>

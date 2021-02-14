@@ -30,7 +30,13 @@ import { LazyLoadImageDirective } from './lazy-load-image/lazy-load-image.direct
     {
       provide: 'Document',
       useValue: document
+    },
+
+    {
+      provide: 'Window',
+      useValue: window
     }
+
   ]
 })
 export class DirectivesModule {
