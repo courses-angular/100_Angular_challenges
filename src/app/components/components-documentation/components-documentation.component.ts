@@ -48,6 +48,7 @@ export class ComponentsDocumentationComponent implements OnInit {
 
   // @ViewChild('snackbar') snackbar: SnackbarComponent; // With a templateRef #snackbar
   @ViewChild(SnackbarComponent) snackbar: SnackbarComponent;
+  loaded: boolean = false;
 
 
   constructor(private snackbarService: SnackbarService) {

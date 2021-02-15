@@ -20,3 +20,11 @@
 
   </div>
 </yl-card>
+
+<!--Tabs animation-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Tabs with animation'" [subTitle]="'Other'">
+  <yl-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event">
+    <h2 @slideRightAnimation *ngIf="selectedTab === 0">Tab 1 Example</h2>
+    <h2 @slideRightAnimation *ngIf="selectedTab === 1">Tab 2 Example</h2>
+  </yl-tabs>
+</yl-card>

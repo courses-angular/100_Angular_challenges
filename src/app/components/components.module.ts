@@ -33,6 +33,8 @@ import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
+import { FooterComponent } from './footer/footer.component';
+import {SkeletonLoaderComponent} from './skeleton-loader/skeleton-loader.component';
 
 
 @NgModule({
@@ -55,7 +57,6 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
     CounterComponent,
     SimpleTableComponent,
     PaginationComponent,
-    TabsComponent,
     SortTableComponent,
     EmailFormComponent,
     RibbonComponent,
@@ -63,6 +64,10 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
     BannerCutOutComponent,
     SimplePopupComponent,
     CountdownTimerComponent,
+    FooterComponent,
+    SkeletonLoaderComponent,
+  ],
+  exports: [
   ],
 
   imports: [

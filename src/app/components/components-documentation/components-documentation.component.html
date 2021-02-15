@@ -198,7 +198,19 @@
 
 <!--Countdown timer-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Countdown timer'" [subTitle]="'Components'">
-
     <yl-countdown-timer body [time]="'Feb 14, 2023 11:33:44'"></yl-countdown-timer>
+</yl-card>
 
+<!--Sort table-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Skeleton loader'" [subTitle]="'Components'">
+  <yl-skeleton-loader body *ngIf="!loaded;else isLoaded" [width]="'100%'"></yl-skeleton-loader>
+  <ng-template #isLoaded>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam atque corporis delectus, error impedit nobis nostrum officiis placeat provident quaerat quia! A accusamus beatae blanditiis placeat? Ad dolor dolorem doloribus eos fugit hic ipsam iste, omnis possimus praesentium. Cupiditate doloremque error ipsam odit quam! Consequatur deserunt facilis fuga ipsum!</p>
+  </ng-template >
+  <button footer (click)="loaded = !loaded">Toogle</button>
+</yl-card>
+
+<!--Footer-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Footer'" [subTitle]="'Components'">
+  <yl-footer body></yl-footer>
 </yl-card>
