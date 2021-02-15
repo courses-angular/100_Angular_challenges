@@ -210,6 +210,13 @@
   <button footer (click)="loaded = !loaded">Toogle</button>
 </yl-card>
 
+<!--Social media-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Social media'" [subTitle]="'Components'">
+  <div body>
+    <yl-social-media-bar  [socialMedia]="socialMediaButtons"></yl-social-media-bar>
+  </div>
+</yl-card>
+
 <!--Footer-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Footer'" [subTitle]="'Components'">
   <yl-footer body></yl-footer>
