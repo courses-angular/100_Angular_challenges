@@ -76,7 +76,8 @@
 
 <!--Quote-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Quote'" [subTitle]="'Components'">
-  <yl-quote body [quote]="'The way to get started is to quit talking and begin doing.'" [author]="'Walt Disney'" [occupation]="'American animator,writer,voice actor,film producer'"></yl-quote>
+  <yl-quote body [quote]="'The way to get started is to quit talking and begin doing.'" [author]="'Walt Disney'"
+            [occupation]="'American animator,writer,voice actor,film producer'"></yl-quote>
 </yl-card>
 
 <!--Switch - Toggle-->
@@ -105,12 +106,13 @@
 
 <!--Debounce search input-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Debounce search input'" [subTitle]="'Components'">
-  <yl-debounce-search body [width]="250" [placeholder]="'Search'" (searchUpdate)="onDebounceExampleMethod($event)"></yl-debounce-search>
+  <yl-debounce-search body [width]="250" [placeholder]="'Search'"
+                      (searchUpdate)="onDebounceExampleMethod($event)"></yl-debounce-search>
 </yl-card>
 
 <!--Debounce search list-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Debounce search list'" [subTitle]="'Components'">
- <yl-search-list [items]="searchItems" body ></yl-search-list>
+  <yl-search-list [items]="searchItems" body></yl-search-list>
 </yl-card>
 <!--Counter-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Counter'" [subTitle]="'Components'">
@@ -124,15 +126,15 @@
 
 <!--Pagination-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Pagination'" [subTitle]="'Components'">
- <yl-pagination [totalItems]="200" body></yl-pagination>
+  <yl-pagination [totalItems]="200" body></yl-pagination>
 </yl-card>
 
 <!--Tabs-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Tabs'" [subTitle]="'Components'">
- <yl-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event">
-   <yl-pagination *ngIf="selectedTab === 0" [totalItems]="200"></yl-pagination>
-   <yl-counter *ngIf="selectedTab === 1" [width]="250"></yl-counter>
- </yl-tabs>
+  <yl-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event">
+    <yl-pagination *ngIf="selectedTab === 0" [totalItems]="200"></yl-pagination>
+    <yl-counter *ngIf="selectedTab === 1" [width]="250"></yl-counter>
+  </yl-tabs>
 </yl-card>
 
 <!--Sort table-->
@@ -148,7 +150,7 @@
 <!--Ribbon-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Ribbon'" [subTitle]="'Components'">
   <div body>
-    <yl-ribbon  [content]="'Ribbon element'" [location]="ribbonStyle.location" [type]="ribbonStyle.type"></yl-ribbon>
+    <yl-ribbon [content]="'Ribbon element'" [location]="ribbonStyle.location" [type]="ribbonStyle.type"></yl-ribbon>
     <div footer>
       <div class="actions_location">
         <button (click)="ribbonStyle.location = RibbonLocation.TopRight">Top right</button>
@@ -198,22 +200,25 @@
 
 <!--Countdown timer-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Countdown timer'" [subTitle]="'Components'">
-    <yl-countdown-timer body [time]="'Feb 14, 2023 11:33:44'"></yl-countdown-timer>
+  <yl-countdown-timer body [time]="'Feb 14, 2023 11:33:44'"></yl-countdown-timer>
 </yl-card>
 
 <!--Sort table-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Skeleton loader'" [subTitle]="'Components'">
   <yl-skeleton-loader body *ngIf="!loaded;else isLoaded" [width]="'100%'"></yl-skeleton-loader>
   <ng-template #isLoaded>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam atque corporis delectus, error impedit nobis nostrum officiis placeat provident quaerat quia! A accusamus beatae blanditiis placeat? Ad dolor dolorem doloribus eos fugit hic ipsam iste, omnis possimus praesentium. Cupiditate doloremque error ipsam odit quam! Consequatur deserunt facilis fuga ipsum!</p>
-  </ng-template >
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam atque corporis delectus, error
+      impedit nobis nostrum officiis placeat provident quaerat quia! A accusamus beatae blanditiis placeat? Ad dolor
+      dolorem doloribus eos fugit hic ipsam iste, omnis possimus praesentium. Cupiditate doloremque error ipsam odit
+      quam! Consequatur deserunt facilis fuga ipsum!</p>
+  </ng-template>
   <button footer (click)="loaded = !loaded">Toogle</button>
 </yl-card>
 
 <!--Social media-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Social media'" [subTitle]="'Components'">
   <div body>
-    <yl-social-media-bar  [socialMedia]="socialMediaButtons"></yl-social-media-bar>
+    <yl-social-media-bar [socialMedia]="socialMediaButtons"></yl-social-media-bar>
   </div>
 </yl-card>
 
@@ -227,6 +232,15 @@
     <div class="footer" footer>
       <button (click)="bottomSheetRef.onShow()">Show bottom sheet</button>
     </div>
+  </div>
+</yl-card>
+
+<!--Fieldset-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Fieldset'" [subTitle]="'Components'">
+  <div body>
+    <yl-fieldset [legend]="'Address'">
+  <yl-email-form></yl-email-form>
+    </yl-fieldset>
   </div>
 </yl-card>
 
