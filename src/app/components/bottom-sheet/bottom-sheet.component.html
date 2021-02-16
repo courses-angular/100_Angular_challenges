@@ -1,0 +1,7 @@
+
+
+<div class="bottom-sheet_overlay" (click)="onHide()" [class.isHidden]="!isShow">
+  <div class="bottom-sheet_container" [class.isShow]="isShow">
+    <ng-content></ng-content>
+  </div>
+</div>

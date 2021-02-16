@@ -217,6 +217,19 @@
   </div>
 </yl-card>
 
+<!--Bottom sheet-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Bottom sheet'" [subTitle]="'Components'">
+  <div body class="bottom_sheet_wrapper">
+    <yl-bottom-sheet #bottomSheetRef>
+      <h2 (click)="bottomSheetRef.onHide()">Hello</h2>
+      <h2 (click)="bottomSheetRef.onHide()">World</h2>
+    </yl-bottom-sheet>
+    <div class="footer" footer>
+      <button (click)="bottomSheetRef.onShow()">Show bottom sheet</button>
+    </div>
+  </div>
+</yl-card>
+
 <!--Footer-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Footer'" [subTitle]="'Components'">
   <yl-footer body></yl-footer>

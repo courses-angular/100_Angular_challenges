@@ -1,0 +1,49 @@
+@import "src/styles";
+:host{
+  display: flex;
+}
+
+
+.bottom-sheet_overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 1;
+  z-index: 2;
+  transition: all 1s;
+  &.isHidden{
+    z-index: -1;
+    opacity: 0;
+  }
+  .bottom-sheet_container{
+    @include box-shadow();
+    background-color: #fff;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
+    position: absolute;
+    bottom: -750px;
+    z-index: 21;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 300px;
+    max-height: 70px;
+    visibility: hidden;
+    transition: all 1s;
+    padding: 30px;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+    &.isShow{
+      bottom: 0;
+      visibility: visible;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+
+  }
+}
