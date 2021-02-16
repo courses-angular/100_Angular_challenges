@@ -8,6 +8,7 @@ import {SnackbarComponent} from '../snackbar/snackbar.component';
 import {SnackbarService} from '../../services/snackbar/snackbar.service';
 import {SocialMediaIcon} from '../social-media-bar/social-media.model';
 import {SocialMediaType} from '../social-media-bar/social-media.type';
+import {PillType} from '../pill/pill-type.enum';
 
 @Component({
   selector: 'yl-components-documentation',
@@ -73,7 +74,8 @@ export class ComponentsDocumentationComponent implements OnInit {
       href: 'https://www.youtube.com ',
       type: SocialMediaType.YouTube
     }
-  ]
+  ];
+  pillType = PillType;
 
 
   constructor(private snackbarService: SnackbarService) {
@@ -96,5 +98,9 @@ export class ComponentsDocumentationComponent implements OnInit {
 
   callSnackbarFromService(): void {
     this.snackbarService.callSnackbar('Snackbar from service');
+  }
+
+  onShowSelectedPills(event: string[]): void {
+    console.log('Selected pills', event);
   }
 }

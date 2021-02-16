@@ -38,6 +38,8 @@ import {SkeletonLoaderComponent} from './skeleton-loader/skeleton-loader.compone
 import {SocialMediaBarComponent} from './social-media-bar/social-media-bar.component';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { FieldsetComponent } from './fieldset/fieldset.component';
+import { PillComponent } from './pill/pill.component';
+import { PillFiltersComponent } from './pill-filters/pill-filters.component';
 
 
 @NgModule({
@@ -72,6 +74,8 @@ import { FieldsetComponent } from './fieldset/fieldset.component';
     SocialMediaBarComponent,
     BottomSheetComponent,
     FieldsetComponent,
+    PillComponent,
+    PillFiltersComponent,
   ],
   exports: [
   ],

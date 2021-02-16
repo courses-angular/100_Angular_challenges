@@ -1,0 +1,5 @@
+<div>
+  <span>Selected pills:</span><yl-pill *ngFor="let pill of selectedPills" [label]="pill" [isActive]="true" [canBeSelected]="true" (selected)="removePill($event)"></yl-pill>
+  <hr>
+  <span>Unselected pills:</span><yl-pill *ngFor="let pill of unSelectedPills" [label]="pill" [canBeSelected]="true" (selected)="addPill($event)"></yl-pill>
+</div>

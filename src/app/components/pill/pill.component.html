@@ -1,0 +1,6 @@
+<div [ngClass]="['pill_container',type]" (click)="toggle()">
+  <i *ngIf="iconClass" [ngClass]="iconClass"></i>
+  <span>{{label}}</span>
+
+  <i *ngIf="isActive && canBeSelected" class="far fa-times-circle"></i>
+</div>

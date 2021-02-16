@@ -46,14 +46,14 @@ export class CountdownTimerComponent implements OnInit {
   get seconds(): string {
     const {milliseconds, minuteInSeconds} = this.timerNumerics;
     const seconds = Math.floor((this.getTimeDifference() % (minuteInSeconds * milliseconds)) / milliseconds);
-    console.log(seconds);
+    // console.log(seconds);
     return this.formatTime(seconds);
   }
 
 
   private getTimeDifference(): number {
     const currentTime = new Date().getTime();
-    console.log(this.countDownTime - currentTime);
+    // console.log(this.countDownTime - currentTime);
     return this.countDownTime - currentTime;
   }
 

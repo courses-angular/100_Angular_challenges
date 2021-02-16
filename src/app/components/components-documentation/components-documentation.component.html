@@ -244,6 +244,23 @@
   </div>
 </yl-card>
 
+<!--Pill-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Pill'" [subTitle]="'Components'">
+  <div body>
+   <yl-pill [type]="pillType.Error" [iconClass]="'fas fa-tag'" [label]="'Error'"></yl-pill>
+   <yl-pill [type]="pillType.Info" [iconClass]="'fas fa-tag'" [label]="'Info'"></yl-pill>
+   <yl-pill [type]="pillType.Success" [iconClass]="'fas fa-tag'" [label]="'Success'"></yl-pill>
+   <yl-pill [type]="pillType.Warning" [iconClass]="'fas fa-tag'" [label]="'Warning'"></yl-pill>
+  </div>
+</yl-card>
+
+<!--Pills filter-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Pills filter'" [subTitle]="'Components'">
+  <div body>
+   <yl-pill-filters [pills]="['HTML','CSS','SCSS','JS','React','Angular','Vue']" (selected)="onShowSelectedPills($event)"></yl-pill-filters>
+  </div>
+</yl-card>
+
 <!--Footer-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Footer'" [subTitle]="'Components'">
   <yl-footer body></yl-footer>

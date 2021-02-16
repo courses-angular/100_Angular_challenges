@@ -1,0 +1,25 @@
+@import "src/styles";
+
+.pill_container{
+  padding: 5px 15px;
+  border-radius: 16px;
+  color: #ffffff;
+  margin: 5px;
+  cursor: pointer;
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-gap: 5px;
+  align-items: center;
+  &.success{
+    background-color: $green;
+  }
+  &.error{
+    background-color: $red;
+  }
+  &.warning{
+    background-color: $orange;
+  }
+  &.info{
+    background-color: $blue;
+  }
+}
