@@ -1,0 +1,19 @@
+@import "src/styles";
+
+.not_found_container{
+  display: grid;
+  grid-gap: 20px;
+  text-align: center;
+  place-items: center;
+  align-content: center;
+  height:84vh;
+  h1{
+    text-transform: uppercase;
+  }
+  i,h1{
+    color: $blue;
+  }
+  i{
+    font-size: 5em;
+  }
+}

@@ -4,6 +4,7 @@ import {ComponentsDocumentationComponent} from './components/components-document
 import {DirectivesDocumentationComponent} from './directives/directives-documentation/directives-documentation.component';
 import {PipesDocumentationComponent} from './pipes/pipes-documentation/pipes-documentation.component';
 import {ServicesDocumentationComponent} from './services/services-documentation/services-documentation.component';
+import {NotFoundComponent} from './components/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'services',
     loadChildren: () => import('./services/service.module').then(m => m.ServiceModule)
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
   }
 ];
 

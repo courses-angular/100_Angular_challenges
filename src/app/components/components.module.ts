@@ -40,6 +40,7 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { FieldsetComponent } from './fieldset/fieldset.component';
 import { PillComponent } from './pill/pill.component';
 import { PillFiltersComponent } from './pill-filters/pill-filters.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -76,8 +77,10 @@ import { PillFiltersComponent } from './pill-filters/pill-filters.component';
     FieldsetComponent,
     PillComponent,
     PillFiltersComponent,
+    NotFoundComponent,
   ],
   exports: [
+    FooterComponent
   ],
 
   imports: [
