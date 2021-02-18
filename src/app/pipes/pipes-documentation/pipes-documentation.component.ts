@@ -7,7 +7,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class PipesDocumentationComponent implements OnInit {
   public flattenData = [1, 2, [3], [4, [5, 6, [7]]]];
-
+  public html = '<a href="https://www.YouTube.com/Codingtutorials360" target="blank">YouTube </a>';
+  public stringArray: string[] = ['Courses', 'YouTube', 'Twitter', 'LinkedIn'];
   constructor() {
   }
 

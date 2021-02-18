@@ -1,4 +1,4 @@
-<h1>Pipes</h1>
+<yl-banner-cut-out [title]="'Pipes'"></yl-banner-cut-out>
 <!--Truncate pipe-->
 
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Truncate pipe'" [subTitle]="'Pipes'">
@@ -32,6 +32,21 @@
   <div body>
     {{['Hello', 'World', 'Hello world'] | filterTerm: 'Hello'}}
   </div>
-
 </yl-card>
 
+<!--Rich text-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Rich text'" [subTitle]="'Pipes'">
+  <div body>
+    <div [innerHTML]="html | richText"></div>
+  </div>
+</yl-card>
+
+<!--Sort by-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Sort by'" [subTitle]="'Pipes'">
+  <div body>
+    <h5>String Ascending</h5>
+    <p>{{stringArray | sortByDirection}}</p>
+    <h5>String Descending</h5>
+    <p>{{stringArray | sortByDirection: false}}</p>
+  </div>
+</yl-card>

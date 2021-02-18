@@ -68,7 +68,6 @@ import { PasswordComponent } from './password/password.component';
     EmailFormComponent,
     RibbonComponent,
     ButtonToggleComponent,
-    BannerCutOutComponent,
     SimplePopupComponent,
     CountdownTimerComponent,
     FooterComponent,
@@ -81,9 +80,9 @@ import { PasswordComponent } from './password/password.component';
     NotFoundComponent,
     PasswordComponent,
   ],
-  exports: [
-    FooterComponent
-  ],
+    exports: [
+        FooterComponent,
+    ],
 
   imports: [
     CommonModule,

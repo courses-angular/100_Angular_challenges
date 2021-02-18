@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {CardComponent} from '../components/card/card.component';
 import {SnackbarComponent} from '../components/snackbar/snackbar.component';
 import {TabsComponent} from '../components/tabs/tabs.component';
+import {BannerCutOutComponent} from '../components/banner-cut-out/banner-cut-out.component';
 
 
 
@@ -10,7 +11,8 @@ import {TabsComponent} from '../components/tabs/tabs.component';
   declarations: [
     CardComponent,
     SnackbarComponent,
-    TabsComponent
+    TabsComponent,
+    BannerCutOutComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +20,8 @@ import {TabsComponent} from '../components/tabs/tabs.component';
   exports: [
     CardComponent,
     SnackbarComponent,
-    TabsComponent
+    TabsComponent,
+    BannerCutOutComponent
   ]
 })
 export class SharedModule { }

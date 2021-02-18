@@ -8,10 +8,12 @@ import {SharedModule} from '../shared/shared.module';
 import { CreditCardFormatterPipe } from './credit-card/credit-card-formatter.pipe';
 import { FlattenPipe } from './flatten-pipe/flatten.pipe';
 import { FilterTermPipe } from './filter-term/filter-term.pipe';
+import { RichTextPipe } from './rich-text/rich-text.pipe';
+import { SortByDirectionPipe } from './sort-by-direction/sort-by-direction.pipe';
 
 
 @NgModule({
-  declarations: [PipesDocumentationComponent, TruncatePipe, CreditCardFormatterPipe, FlattenPipe, FilterTermPipe],
+  declarations: [PipesDocumentationComponent, TruncatePipe, CreditCardFormatterPipe, FlattenPipe, FilterTermPipe, RichTextPipe, SortByDirectionPipe],
   imports: [
     CommonModule,
     PipesRoutingModule,
