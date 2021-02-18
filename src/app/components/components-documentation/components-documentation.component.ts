@@ -76,6 +76,7 @@ export class ComponentsDocumentationComponent implements OnInit {
     }
   ];
   pillType = PillType;
+  isShowOverlay: boolean = false;
 
 
   constructor(private snackbarService: SnackbarService) {

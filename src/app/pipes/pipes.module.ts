@@ -10,10 +10,11 @@ import { FlattenPipe } from './flatten-pipe/flatten.pipe';
 import { FilterTermPipe } from './filter-term/filter-term.pipe';
 import { RichTextPipe } from './rich-text/rich-text.pipe';
 import { SortByDirectionPipe } from './sort-by-direction/sort-by-direction.pipe';
+import { SortByKeyPipe } from './sort-by-key/sort-by-key.pipe';
 
 
 @NgModule({
-  declarations: [PipesDocumentationComponent, TruncatePipe, CreditCardFormatterPipe, FlattenPipe, FilterTermPipe, RichTextPipe, SortByDirectionPipe],
+  declarations: [PipesDocumentationComponent, TruncatePipe, CreditCardFormatterPipe, FlattenPipe, FilterTermPipe, RichTextPipe, SortByDirectionPipe, SortByKeyPipe],
   imports: [
     CommonModule,
     PipesRoutingModule,

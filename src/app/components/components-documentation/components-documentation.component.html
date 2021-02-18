@@ -273,6 +273,14 @@
   <yl-password body></yl-password>
 </yl-card>
 
+<!--Overlay-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Overlay'" [subTitle]="'Components'">
+  <div body>
+    <yl-overlay [isShow]="isShowOverlay"></yl-overlay>
+    <button (click)="isShowOverlay = true">Show overlay</button>
+  </div>
+</yl-card>
+
 <!--&lt;!&ndash;Footer&ndash;&gt;-->
 <!--<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Footer'" [subTitle]="'Components'">-->
 <!--  <yl-footer body></yl-footer>-->

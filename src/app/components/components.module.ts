@@ -42,6 +42,7 @@ import { PillComponent } from './pill/pill.component';
 import { PillFiltersComponent } from './pill-filters/pill-filters.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PasswordComponent } from './password/password.component';
+import { OverlayComponent } from './overlay/overlay.component';
 
 
 @NgModule({
@@ -79,6 +80,7 @@ import { PasswordComponent } from './password/password.component';
     PillFiltersComponent,
     NotFoundComponent,
     PasswordComponent,
+    OverlayComponent,
   ],
     exports: [
         FooterComponent,

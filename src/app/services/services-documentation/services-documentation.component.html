@@ -1,14 +1,23 @@
 <yl-banner-cut-out [title]="'Services'"></yl-banner-cut-out>
 
 <!--User service-->
-<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'User'" [subTitle]="'Services'">
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'User service'" [subTitle]="'Services'">
   <div body>
     <p>{{user | json}}</p>
   </div>
 </yl-card>
-
-<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'User'" [subTitle]="'Services'">
+<!--Snackbar service-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Snackbar service'" [subTitle]="'Services'">
   <div body>
     <button>Show snackbar</button>
+  </div>
+</yl-card>
+<!--Local storage  service-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Local storage service'" [subTitle]="'Services'">
+  <div body>
+    <p>State: {{state | json}}</p>
+  </div>
+  <div footer>
+    <button (click)="updateState()">Update state</button>
   </div>
 </yl-card>
