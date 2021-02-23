@@ -9,7 +9,7 @@
 <!--Snackbar service-->
 <yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Snackbar service'" [subTitle]="'Services'">
   <div body>
-    <button>Show snackbar</button>
+    <button (click)="callSnackBarService()">Show snackbar</button>
   </div>
 </yl-card>
 <!--Local storage  service-->
@@ -19,5 +19,17 @@
   </div>
   <div footer>
     <button (click)="updateState()">Update state</button>
+  </div>
+</yl-card>
+
+
+<!--Route prams-->
+<yl-card [iconClasses]="'fas fa-info-circle'" [title]="'Snackbar service'" [subTitle]="'Services'">
+  <div body>
+    {{userIdExample | json}}
+  </div>
+
+  <div footer>
+    <a routerLink="/services/3">Go to Route Id 3</a>
   </div>
 </yl-card>
